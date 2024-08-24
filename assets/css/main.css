@@ -261,7 +261,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #f0542c;
+    color: #a01617;
 }
 
 a:focus {
@@ -270,12 +270,12 @@ a:focus {
 
 ::-moz-selection {
     color: #fff;
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 ::selection {
     color: #fff;
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 .md-section {
@@ -358,7 +358,7 @@ textarea:-ms-input-placeholder, select:-ms-input-placeholder {
 
 input:not([type="button"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="color"]):focus,
 textarea:focus, select:focus {
-    border-color: #f0542c;
+    border-color: #a01617;
 }
 
 input:not([type="button"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="color"])[disabled],
@@ -487,6 +487,7 @@ mark, .mark {
 
 .btn:hover {
     color: #f1f1f1;
+    background-color: #ab4242;
 }
 
 .btn-outline {
@@ -494,11 +495,11 @@ mark, .mark {
 }
 
 .btn-primary {
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 .btn-primary:hover {
-    background-color: #da390f;
+    background-color: #ab4242;
 }
 
 .btn-danger {
@@ -536,6 +537,10 @@ mark, .mark {
 
 /* 4. about
 --------------------------------------------------------------------------------*/
+.about-section-list {
+    list-style-type: disc;
+    margin-left: 2em;
+}
 
 .about {
     display: block;
@@ -679,7 +684,7 @@ mark, .mark {
 --------------------------------------------------------------------------------*/
 
 .cta-02 {
-    background-color: #f0542c;
+    background-color: #a01617;
     padding: 20px 0;
 }
 
@@ -776,7 +781,7 @@ mark, .mark {
 }
 
 .gallery__overlay {
-    background-color: rgba(240, 84, 44, .8);
+    background-color: rgba(240, 0, 64, 0.8);
     width: 0;
     right: 0;
     bottom: 0;
@@ -1553,7 +1558,7 @@ mark, .mark {
 
 .quote-02 {
     max-width: 300px;
-    background-color: #f0542c;
+    background-color: #a01617;
     border: 5px solid #fff;
     padding: 20px;
     margin: 0;
@@ -1607,7 +1612,7 @@ mark, .mark {
 }
 
 .quote__style-02 {
-    border-left: 2px solid #f0542c;
+    border-left: 2px solid #a01617;
     background-color: transparent;
     padding: 0 10px;
 }
@@ -1690,7 +1695,7 @@ mark, .mark {
 }
 
 .services__title:hover {
-    color: #f0542c;
+    color: #a01617;
 }
 
 .services__img {
@@ -2296,7 +2301,7 @@ mark, .mark {
     border-radius: 50%;
     background-color: #222;
     margin: 5px;
-    background-color: #f0542c;
+    background-color: #a01617;
     color: #fff;
 }
 
@@ -2433,14 +2438,14 @@ mark, .mark {
 }
 
 .sec-title__title span {
-    color: #f0542c;
+    color: #a01617;
 }
 
 .sec-title__divider {
     display: block;
     width: 40px;
     height: 2px;
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 .sec-title__lg-title .sec-title__title {
@@ -2495,7 +2500,7 @@ mark, .mark {
 
 .widget-contact__title {
     text-transform: capitalize;
-    color: #f0542c;
+    color: #a01617;
 }
 
 .widget-contact__text {
@@ -2661,12 +2666,12 @@ mark, .mark {
 
 .widget-list-02 li a:hover {
     color: #fff;
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 .widget-list-02 li.current a {
     color: #fff;
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 .widget-list-02__submenu li a {
@@ -2680,7 +2685,7 @@ mark, .mark {
     left: 10px;
     width: 30px;
     height: 1px;
-    background-color: #f0542c;
+    background-color: #a01617;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 }
@@ -2709,7 +2714,7 @@ mark, .mark {
     left: 0;
     top: 50%;
     font-family: 'FontAwesome';
-    color: #f0542c;
+    color: #a01617;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 }
@@ -2774,7 +2779,7 @@ mark, .mark {
 }
 
 .widget-post__title:hover {
-    color: #f0542c;
+    color: #a01617;
 }
 
 .widget-post__date {
@@ -2822,7 +2827,7 @@ mark, .mark {
 }
 
 .widget-product__title:hover {
-    color: #f0542c;
+    color: #a01617;
 }
 
 .widget-product__price {
@@ -2883,8 +2888,8 @@ mark, .mark {
 }
 
 .widget-tag a:hover {
-    background-color: #f0542c;
-    border-color: #f0542c;
+    background-color: #a01617;
+    border-color: #a01617;
     color: #fff;
 }
 
@@ -2910,13 +2915,13 @@ mark, .mark {
 }
 
 .widget-twitter__title:hover {
-    color: #f0542c;
+    color: #a01617;
 }
 
 .widget-twitter__sub a {
     display: block;
     font-size: 13px;
-    color: #f0542c;
+    color: #a01617;
 }
 
 .widget-twitter__sub a:hover {
@@ -3056,7 +3061,7 @@ mark, .mark {
 }
 
 .searchbar__addon {
-    color: #f0542c;
+    color: #a01617;
     background-color: transparent;
     border: 0;
     padding: 6px 12px;
@@ -3152,7 +3157,7 @@ mark, .mark {
 
 .search-btn {
     color: #fff;
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 .header-menu__toggle {
@@ -3217,7 +3222,7 @@ mark, .mark {
     }
 
     .raising-nav li:hover > a {
-        color: #f0542c;
+        color: #a01617;
     }
 
     .raising-nav .raising-menu .sub-menu {
@@ -3280,12 +3285,12 @@ mark, .mark {
 
     .raising-nav .raising-menu .sub-menu .current-menu-parent > a,
     .raising-nav .raising-menu .sub-menu .current-menu-item > a {
-        color: #f0542c;
+        color: #a01617;
     }
 
     .raising-nav .raising-menu .current-menu-parent > a,
     .raising-nav .raising-menu .current-menu-item > a {
-        color: #f0542c;
+        color: #a01617;
     }
 
     .raising-nav .raising-menu .sub-menu {
@@ -3427,7 +3432,7 @@ mark, .mark {
     right: 0;
     width: 0;
     height: 2px;
-    background-color: #f0542c;
+    background-color: #a01617;
     margin: 0 auto;
     visibility: hidden;
     opacity: 0;
@@ -3441,7 +3446,7 @@ mark, .mark {
 }
 
 .raising-nav li.current a {
-    color: #f0542c;
+    color: #a01617;
 }
 
 .raising-menu.active ~ .navbar-toggle span:nth-child(1) {
@@ -3506,11 +3511,11 @@ mark, .mark {
     line-height: 50px;
     font-size: 20px;
     text-align: center;
-    background-color: rgba(240, 84, 44, .6);
+    background-color: rgba(240, 0, 64, 0.8);
 }
 
 .hero .swiper-button-custom > div:hover {
-    background-color: #f0542c;
+    background-color: #a01617;
     color: #fff;
 }
 
@@ -3888,7 +3893,7 @@ ol, ul {
 }
 
 .swiper-pagination-custom .swiper-pagination-bullet-active {
-    background-color: #f0542c;
+    background-color: #a01617;
 }
 
 .swiper-fix-padding {
