@@ -1582,6 +1582,117 @@ mark, .mark {
 }
 
 
+/* 11. c) quote_03
+--------------------------------------------------------------------------------*/
+
+.quote-03 {
+    max-width: 400px;
+    background-color: #a01617;
+    border: 1px solid #222;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(68, 68, 68, .6);
+}
+
+.quote-03 * {
+    color: #fff;
+}
+
+.quote-03__text {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.quote-03__text:before {
+    content: '\F10D';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    display: block;
+}
+
+
+@media (max-width: 1200px) {
+    .quote-03 {
+        background-color: #a01617;
+        border: 1px solid #222;
+        padding: 20px;
+        margin: 0;
+        box-shadow: 0 0 5px rgba(68, 68, 68, .6);
+    }
+    
+    .quote-03 * {
+        color: #fff;
+    }
+    
+    .quote-03__text {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+    }
+    
+    .quote-03__text:before {
+        content: '\F10D';
+        font-family: 'FontAwesome';
+        font-size: 25px;
+        display: block;
+    }
+}
+
+/* 11. d) quote_4
+--------------------------------------------------------------------------------*/
+
+.quote-04 {
+    max-width: 300px;
+    background-color: #a01617;
+    border: 5px solid #fff;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(68, 68, 68, .6);
+}
+
+.quote-04 * {
+    color: #fff;
+}
+
+.quote-04__text {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.quote-04__text:before {
+    content: '\F10D';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    display: block;
+}
+
+@media (max-width: 693px) {
+    .quote-04 {
+        max-width: 300px;
+        background-color: #a01617;
+        border: 5px solid #fff;
+        padding: 20px;
+        margin: 0;
+        box-shadow: 0 0 5px rgba(68, 68, 68, .6);
+    }
+    
+    .quote-04 * {
+        color: #fff;
+    }
+    
+    .quote-04__text {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+    }
+    
+    .quote-04__text:before {
+        content: '\F10D';
+        font-family: 'FontAwesome';
+        font-size: 25px;
+        display: block;
+    }
+}
+
+
 /* 12. quote
 --------------------------------------------------------------------------------*/
 
