@@ -86,8 +86,20 @@ img {
     overflow: hidden;
 }
 
-.md-section {
+.md-section-a {
     position: relative;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.md-section-b {
+    position: relative;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1793,9 +1805,15 @@ mark, .mark {
 /* 14. services
 --------------------------------------------------------------------------------*/
 
-.services {
+.services-a {
     margin-bottom: 40px;
     background-color: #fff;
+    padding: 15px;
+}
+
+.services-b {
+    margin-bottom: 40px;
+    background-color: #eee;
     padding: 15px;
 }
 
