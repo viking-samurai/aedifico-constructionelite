@@ -3387,7 +3387,7 @@ mark, .mark {
     }
 
     .raising-nav .raising-menu .sub-menu a {
-        color: #eee;
+        color: #828282;
         padding: 2px 25px;
     }
 
@@ -3443,7 +3443,7 @@ mark, .mark {
     }
 
     .raising-nav .raising-menu .sub-menu li:hover > a {
-        color: #4aa8ff;
+        color: #a01617;
     }
 
     .raising-nav .raising-toggle-menu {
