@@ -1804,15 +1804,16 @@ mark, .mark {
 
 /* 14. services
 --------------------------------------------------------------------------------*/
+.services {
+    margin: 40px 0;
+}
 
 .services-a {
-    margin-bottom: 40px;
     background-color: #fff;
     padding: 15px;
 }
 
 .services-b {
-    margin-bottom: 40px;
     background-color: #eee;
     padding: 15px;
 }
