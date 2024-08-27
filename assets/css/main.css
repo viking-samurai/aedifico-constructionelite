@@ -915,6 +915,7 @@ mark, .mark {
 
 [data-col-xs="2"].grid-css .grid-item.extra-large {
     width: 100%;
+    height: 20em;
 }
 
 [data-col-xs="3"].grid-css .grid-item, [data-col-xs="3"].grid-css .grid-sizer {
