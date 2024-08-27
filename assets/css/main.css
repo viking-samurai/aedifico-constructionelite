@@ -915,7 +915,7 @@ mark, .mark {
 
 [data-col-xs="2"].grid-css .grid-item.extra-large {
     width: 100%;
-    height: 20em;
+    height: 100%;
 }
 
 [data-col-xs="3"].grid-css .grid-item, [data-col-xs="3"].grid-css .grid-sizer {
@@ -932,7 +932,8 @@ mark, .mark {
 }
 
 [data-col-xs="4"].grid-css .grid-item, [data-col-xs="4"].grid-css .grid-sizer {
-    width: 25%;
+    max-height: 36em;
+    width: 100%;
 }
 
 [data-col-xs="4"].grid-css .grid-item.wide,
