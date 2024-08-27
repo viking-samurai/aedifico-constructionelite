@@ -3504,7 +3504,7 @@ mark, .mark {
         overflow-x: hidden;
         overflow-y: auto;
         text-align: left;
-        width: 300px;
+        width: 240px;
         transition: all 300ms ease;
     }
 
