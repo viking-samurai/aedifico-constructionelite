@@ -932,7 +932,7 @@ mark, .mark {
 }
 
 [data-col-xs="4"].grid-css .grid-item, [data-col-xs="4"].grid-css .grid-sizer {
-    max-height: 100em;
+    height: 100em;
     width: 100%;
 }
 
