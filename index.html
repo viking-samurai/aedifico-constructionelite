@@ -35,36 +35,49 @@
 					<div class="header__inner">
 						<div class="header-logo"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></div>
 						
-						<!-- raising-nav -->
-						<nav class="raising-nav">
-							
-							<!-- raising-menu -->
-							<ul class="raising-menu">
-								<li class="current"><a href="index.html#id1">Home</a>
-								</li>
-								<li><a href="index.html#id2">About</a>
-								</li>
-								<li>
-									<a href="index.html#id3">Services</a>
-									<ul class="raising-menu sub-menu">
-										<li><a href="leftTemplate.html">Exterior Enveloping</a></li>
-										<li><a href="centreTemplate.html">Multi-Family Construction</a></li>
-										<li><a href="rightTemplate.html">Industrial Construction</a></li>
-									</ul>
-								</li>
-								<li><a href="index.html#id4">gallery</a>
-								</li>
-								<li><a href="index.html#id5">testimonials</a>
-								</li>
-								<li><a href="index.html#id6">contact us</a>
-								</li>
-								<li><a href="careers.html">careers</a>
-								</li>
-							</ul><!-- raising-menu -->
+						
+						<nav class="mainNav"><!--Start of Navigation area-->
+							<section class="navigation-section" id="navigation-links">
+								<div class="dropdown navigation-link">
+									<button class="dropbtn">Home</button>
+								</div>
+								<div class="dropdown navigation-link">
+									<button class="dropbtn">Whitepaper</button>
+								</div>
+								<div class="dropdown navigation-link">
+									<button class="dropbtn">Team</button>
+								</div>
+								<div class="dropdown navigation-link">
+									<button id="gameDropdownButton" class="dropbtn" onclick="triggerDropdown(this.id)">Game
+									  <i class="fa fa-caret-down"></i>
+									</button>
+									<div style="margin: 2.5em auto auto 4em;" class="dropdown-content" id="gameDropdown">
+									  <a class="dropdown-color-trigger" href="#">Link 1</a>
+									  <a class="dropdown-color-trigger" href="#">Link 2</a>
+									  <a class="dropdown-color-trigger" href="#">Link 3</a>
+									</div>
+								</div>
+								<div class="dropdown navigation-link">
+									<button class="dropbtn">World Mode</button>
+								</div>
+								<div class="dropdown navigation-link">
+									<button id="databaseDropdownButton" class="dropbtn" onclick="triggerDropdown(this.id)">Database
+									  <i class="fa fa-caret-down"></i>
+									</button>
+									<div style="margin: 2.5em auto auto 2.5em;" class="dropdown-content" id="databaseDropdown">
+									  <a class="dropdown-color-trigger" href="#">Link 1</a>
+									  <a class="dropdown-color-trigger" href="#">Link 2</a>
+									  <a class="dropdown-color-trigger" href="#">Link 3</a>
+									</div>
+								</div>
+								<div class="dropdown navigation-link">
+									<button class="dropbtn">Lore Wiki</button>
+								</div>
+							</section>
 							
 							<div class="navbar-toggle"><i class="fa fa-bars"></i></div>
 						</nav><!-- End / raising-nav -->
-						
+	
 						<div class="btn-right">
 							<div class="search-btn"><i class="fa fa-search"></i></div>
 						</div>
@@ -76,6 +89,8 @@
 					</div>
 				</div>
 			</header><!-- End / header -->
+
+			
 			
 			<!-- Content-->
 			<div class="md-content">
