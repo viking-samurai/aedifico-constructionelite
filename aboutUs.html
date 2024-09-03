@@ -37,47 +37,32 @@
 						
 						<!-- raising-nav -->
 						<nav class="raising-nav">
-							<section class="navigation-section" id="navigation-links">
-								<div class="dropdown navigation-link">
-									<a href="index.html#id1"><button class="dropbtn">Home</button></a>
-								</div>
-								<div class="dropdown navigation-link">
-									<a href="index.html#id2"><button class="dropbtn">About</button></a>
-								</div>
-								<div class="dropdown navigation-link">
-									<a href="index.html#id3"><button id="gameDropdownButton" class="dropbtn" 
-										onclick="triggerDropdown(this.id)">Services<i class="fa fa-caret-down"></i></button></a>
-									<div style="margin: 2.5em auto auto 4em;" class="dropdown-content" id="gameDropdown">
-									  <a class="dropdown-color-trigger" href="#">Exterior Enveloping</a>
-									  <a class="dropdown-color-trigger" href="#">Multi-family Construction</a>
-									  <a class="dropdown-color-trigger" href="#">Industrial Construction</a>
-									</div>
-								</div>
-								<div class="dropdown navigation-link">
-									<a href="index.html#id4"><button class="dropbtn">Gallery</button></a>
-								</div>
-								<div class="dropdown navigation-link">
-									<a href="index.html#id5"><button class="dropbtn">Testimonials</button></a>
-								</div>
-								<div class="dropdown navigation-link">
-									<a href="index.html#id6"><button class="dropbtn">Contact Us</button></a>
-								</div>
-								<div class="dropdown navigation-link">
-									<a href="careers.html"><button class="dropbtn">Careers</button></a>
-								</div>
-								<div class="dropdown navigation-link" style="display: none;">
-									<button id="databaseDropdownButton" class="dropbtn" onclick="triggerDropdown(this.id)">Database
-									  <i class="fa fa-caret-down"></i>
-									</button>
-									<div style="margin: 2.5em auto auto 2.5em;" class="dropdown-content" id="databaseDropdown">
-									  <a class="dropdown-color-trigger" href="#">Link 1</a>
-									  <a class="dropdown-color-trigger" href="#">Link 2</a>
-									  <a class="dropdown-color-trigger" href="#">Link 3</a>
-									</div>
-								</div>
-							</section>
 							
-							<div class="navbar-toggle"><i class="fa fa-bars"></i></div>
+							<!-- raising-menu -->
+							<ul class="raising-menu">
+								<li><a href="index.html#id1">Home</a>
+								</li>
+								<li class="current"><a href="index.html#id2">About</a>
+								</li>
+								<li id="services-dropdown-trigger">
+									<a href="index.html#id3">Services</a>
+									<ul class="raising-menu sub-menu" id="services-dropdown-menu">
+										<li><a href="leftTemplate.html">Exterior Enveloping</a></li>
+										<li><a href="centreTemplate.html">Multi-Family Construction</a></li>
+										<li><a href="rightTemplate.html">Industrial Construction</a></li>
+									</ul>
+								</li>
+								<li><a href="index.html#id4">gallery</a>
+								</li>
+								<li><a href="index.html#id5">testimonials</a>
+								</li>
+								<li><a href="index.html#id6">contact us</a>
+								</li>
+								<li><a href="careers.html">careers</a>
+								</li>
+							</ul><!-- raising-menu -->
+							
+							<div class="navbar-toggle side-menu-trigger"><i class="fa fa-bars"></i></div>
 						</nav><!-- End / raising-nav -->
 						
 						<div class="btn-right">
