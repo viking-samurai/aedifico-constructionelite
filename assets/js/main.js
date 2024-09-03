@@ -287,16 +287,24 @@ $('.gallery-wrap').each(function() {
 
 //Navigation Section//////////////
 //Navbar operation
-function triggerDropdown(clicked_id) {
-    //Confirm the click
-    let id = clicked_id;
-    //Establish the parameters
-    if(id === "gameDropdownButton") {
-        //Push out the response
-        document.getElementById("gameDropdown").classList.toggle("show");
-    }
+const servicesDropdownTrigger = document.getElementById('services-dropdown-trigger');
+const servicesDropdownMenu = document.getElementById('services-dropdown-menu');
+
+function triggerDropdown(e) {
+	if(this.id === "services-dropdown-trigger") {
+		servicesDropdownMenu.classList.add('show');
+	}
 }
 
+function removeDropdown(e) {
+	if(this.id === "services-dropdown-trigger") {
+		servicesDropdownMenu.classList.remove('show');
+	}
+}
+
+servicesDropdownTrigger.addEventListener('mouseover', triggerDropdown);
+servicesDropdownTrigger.addEventListener('mouseout', removeDropdown);
+servicesDropdownMenu.addEventListener('mouseout', removeDropdown);
 
 
 //Sidebar construction
