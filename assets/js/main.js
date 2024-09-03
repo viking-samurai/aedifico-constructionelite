@@ -286,34 +286,12 @@ $('.gallery-wrap').each(function() {
 })(jQuery);
 
 //Navigation Section//////////////
-//Navbar operation
-const servicesDropdownTrigger = document.getElementById('services-dropdown-trigger');
-const servicesDropdownMenu = document.getElementById('services-dropdown-menu');
-
-function triggerDropdown(e) {
-	if(this.id === "services-dropdown-trigger") {
-		servicesDropdownMenu.classList.add('show');
-	}
-}
-
-function removeDropdown(e) {
-	if(this.id === "services-dropdown-trigger") {
-		servicesDropdownMenu.classList.remove('show');
-	}
-}
-
-servicesDropdownTrigger.addEventListener('mouseover', triggerDropdown);
-servicesDropdownTrigger.addEventListener('mouseout', removeDropdown);
-servicesDropdownMenu.addEventListener('mouseout', removeDropdown);
-
-
 //Side Navbar operation
 const sideMenuTrigger = document.querySelector('.side-menu-trigger');
 const sideMenu = document.querySelector('.raising-menu');
 
 function openMenu(e) {
 	sideMenu.classList.toggle('active');
-	servicesDropdownMenu.classList.toggle('show');
 }
 
 sideMenuTrigger.addEventListener('click', openMenu);
