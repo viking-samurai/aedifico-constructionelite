@@ -307,3 +307,13 @@ servicesDropdownTrigger.addEventListener('mouseout', removeDropdown);
 servicesDropdownMenu.addEventListener('mouseout', removeDropdown);
 
 
+//Side Navbar operation
+const sideMenuTrigger = document.querySelector('.side-menu-trigger');
+const sideMenu = document.querySelector('.raising-menu');
+
+function openMenu(e) {
+	console.log("I'm working");
+	sideMenu.classList.toggle('active');
+}
+
+sideMenuTrigger.addEventListener('click', openMenu);
