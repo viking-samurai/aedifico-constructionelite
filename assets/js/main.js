@@ -312,8 +312,8 @@ const sideMenuTrigger = document.querySelector('.side-menu-trigger');
 const sideMenu = document.querySelector('.raising-menu');
 
 function openMenu(e) {
-	console.log("I'm working");
 	sideMenu.classList.toggle('active');
+	servicesDropdownMenu.classList.toggle('show');
 }
 
 sideMenuTrigger.addEventListener('click', openMenu);
