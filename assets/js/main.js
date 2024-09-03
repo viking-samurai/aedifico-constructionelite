@@ -191,21 +191,21 @@ if( $('.md-content').children('.fix-header').length == 0) {
     }
 }).trigger('resize');
 
-$('.raising-nav').dropdownMenu({
-    menuClass: 'raising-menu',
-    breakpoint: 1200,
-    toggleClass: 'active',
-    classButtonToggle: 'navbar-toggle',
-    subMenu: {
-        class: 'sub-menu',
-        parentClass: 'menu-item-has-children',
-        toggleClass: 'active'
-    }
-});
+//$('.raising-nav').dropdownMenu({
+//    menuClass: 'raising-menu',
+//    breakpoint: 1200,
+//    toggleClass: 'active',
+//    classButtonToggle: 'navbar-toggle',
+//    subMenu: {
+//        class: 'sub-menu',
+//        parentClass: 'menu-item-has-children',
+//        toggleClass: 'active'
+//    }
+//});
 
-$('.navbar-toggle').on('click', function() {
-    $('.page-wrap').toggleClass('active');
-});
+//$('.navbar-toggle').on('click', function() {
+//    $('.page-wrap').toggleClass('active');
+//});
 
 $(window).on('resize', function(){
     var ww = $(window).width();
@@ -306,46 +306,4 @@ servicesDropdownTrigger.addEventListener('mouseover', triggerDropdown);
 servicesDropdownTrigger.addEventListener('mouseout', removeDropdown);
 servicesDropdownMenu.addEventListener('mouseout', removeDropdown);
 
-
-//Sidebar construction
-//Declare both buttons and the menu.  Nav button starts 'open'
-const linkBox = document.getElementById("mySidenav");
-const openButton = document.getElementById("navButton");
-const closeButton = document.getElementById("closeButton");
-//Click either button to toggle the button and either reveal or collapse the nav menu
-function toggleSidenav() {
-    linkBox.classList.toggle("closed");
-    openButton.classList.toggle("closed");
-    closeButton.classList.toggle("closed");
-}
-
-//Sidebar operation
-function triggerSideDropdown(clicked_id) {
-    //Confirm the click
-    let id = clicked_id;
-    //Establish the parameters
-    if(id === "sideGameDropdownButton") {
-        //Push out the response
-        document.getElementById("sideGameDropdown").classList.toggle("show");
-    }
-}
-
-
-
-//Cleaning up dropdowns
-//Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    //If you click anywhere off the button or the menu...
-    if(!event.target.matches('.dropbtn')) {
-        //Declare all dropdown menus
-        const dropdowns = document.querySelectorAll(".dropdown-content, .sideshow-dropdown-content");
-        //For each dropdown menu currently revealed, unreveal it.
-        for (var i=0; i<dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if(openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            } 
-        }
-    }
-}
 

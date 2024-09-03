@@ -4246,3 +4246,26 @@ ol, ul {
 .show {
     display: block;
 }
+
+/*Navigation media queries*/
+@media (min-width: 1201px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);    
+}
