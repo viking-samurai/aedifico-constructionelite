@@ -293,25 +293,9 @@ function triggerDropdown(clicked_id) {
     //Establish the parameters
     if(id === "gameDropdownButton") {
         //Push out the response
-        document.getElementById("databaseDropdown").classList.remove("show");
         document.getElementById("gameDropdown").classList.toggle("show");
     }
-    if(id === "databaseDropdownButton") {
-        //Push out the other response
-        document.getElementById("gameDropdown").classList.remove("show");
-        document.getElementById("databaseDropdown").classList.toggle("show");
-    }
 }
-
-//Navigation button colour switch on click
-//Declare the constants inside the dropdown menu, but not the menu
-const navLinks = document.querySelectorAll('.dropdown-color-trigger');
-//Colour switch on click
-function colourSwitch(e) {
-    this.classList.add('purpleize');
-}
-//Declare the colour switch trigger
-navLinks.forEach(navLink => navLink.addEventListener('click', colourSwitch));
 
 
 
@@ -334,13 +318,7 @@ function triggerSideDropdown(clicked_id) {
     //Establish the parameters
     if(id === "sideGameDropdownButton") {
         //Push out the response
-        document.getElementById("sideDatabaseDropdown").classList.remove("show");
         document.getElementById("sideGameDropdown").classList.toggle("show");
-    }
-    if(id === "sideDatabaseDropdownButton") {
-        //Push out the other response
-        document.getElementById("sideGameDropdown").classList.remove("show");
-        document.getElementById("sideDatabaseDropdown").classList.toggle("show");
     }
 }
 
