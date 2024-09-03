@@ -4156,6 +4156,7 @@ ol, ul {
 }
 
 
+/* New navigation controls */
 .mainNav{
     display: flex;
     flex-direction: row;
