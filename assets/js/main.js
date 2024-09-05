@@ -289,9 +289,11 @@ $('.gallery-wrap').each(function() {
 //Side Navbar operation
 const sideMenuTrigger = document.querySelector('.side-menu-trigger');
 const sideMenu = document.querySelector('.raising-menu');
+const subMenu = document.querySelector('.sub-menu');
 
 function openMenu(e) {
 	sideMenu.classList.toggle('active');
+	subMenu.classList.toggle('active');
 }
 
 sideMenuTrigger.addEventListener('click', openMenu);
