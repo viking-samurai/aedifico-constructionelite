@@ -299,7 +299,7 @@ sideMenuToggle.addEventListener('click', toggleDropdown);
 window.onclick = function(event){
 	if (document.getElementsByClassName('navbar-toggle')[0].contains(event.target)){
 	   // inside
-	 } else{
+	 } else {
 	   // outside
 		sideMenu.classList.remove('active');
 	 }
