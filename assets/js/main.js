@@ -290,13 +290,18 @@ const sideMenuToggle = document.querySelector('.navbar-toggle');
 const sideMenu = document.querySelector('.raising-menu');
 
 function toggleDropdown(e) {
-    console.log('click');
 	sideMenu.classList.toggle('active');
 }
 
 sideMenuToggle.addEventListener('click', toggleDropdown);
 
 
-
-
+window.onclick = function(event){
+	if (document.getElementsByClassName('navbar-toggle')[0].contains(event.target)){
+	   // inside
+	 } else{
+	   // outside
+		sideMenu.classList.toggle('active');
+	 }
+};
 
