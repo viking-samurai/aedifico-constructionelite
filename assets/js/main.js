@@ -301,7 +301,7 @@ window.onclick = function(event){
 	   // inside
 	 } else{
 	   // outside
-		sideMenu.classList.toggle('active');
+		sideMenu.classList.remove('active');
 	 }
 };
 
