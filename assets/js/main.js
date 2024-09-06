@@ -285,7 +285,7 @@ $('.gallery-wrap').each(function() {
 
 })(jQuery);
 
-
+//Toggle the sidebar open and closed.
 const sideMenuToggle = document.querySelector('.navbar-toggle');
 const sideMenu = document.querySelector('.raising-menu');
 
@@ -295,7 +295,7 @@ function toggleDropdown(e) {
 
 sideMenuToggle.addEventListener('click', toggleDropdown);
 
-
+//Click anywhere to close the sidebar.
 window.onclick = function(event){
 	if (document.getElementsByClassName('navbar-toggle')[0].contains(event.target)){
 	   // inside
