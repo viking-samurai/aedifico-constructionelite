@@ -3467,7 +3467,7 @@ mark, .mark {
 @media (max-width: 1200px) {
     .raising-nav .raising-menu {
         position: fixed;
-        top: 20;
+        top: 0;
         will-change: transform;
     }
 
