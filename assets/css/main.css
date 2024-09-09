@@ -3818,6 +3818,12 @@ ol, ul {
     padding: 0;
 }
 
+.list-type-b {
+    list-style: disc;
+    margin: 0 1em;
+    padding: 0;
+}
+
 
 
 /* 41. Margin Padding
