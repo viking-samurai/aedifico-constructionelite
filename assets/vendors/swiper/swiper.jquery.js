@@ -27,10 +27,10 @@
             direction: 'horizontal',
             touchEventsTarget: 'container',
             initialSlide: 0,
-            speed: 300,
+            speed: 6000,
             // autoplay
-            autoplay: false,
-            autoplayDisableOnInteraction: true,
+            autoplay: true,
+            autoplayDisableOnInteraction: false,
             autoplayStopOnLast: false,
             // To support iOS's swipe-to-go-back gesture (when being used in-app, with UIWebView).
             iOSEdgeSwipeDetection: false,

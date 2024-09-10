@@ -306,35 +306,3 @@ window.onclick = function(event){
 		sideMenu.classList.remove('active');
 	 }
 };
-
-
-
-//Slideshow automation
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-	let i;
-	let slides = document.getElementsByClassName("swiper-slide");
-  
-	for (i = 0; i < slides.length; i++) {
-		if(slides[i].classList.contains('swiper-slide-active')) {
-			slides[i].classList.remove('swiper-slide-active');
-		}
-		if(slides[i].classList.contains('swiper-slide-next')) {
-			slides[i].classList.remove('swiper-slide-next');
-		}
-		if(slides[i].classList.contains('swiper-slide-prev')) {
-			slides[i].classList.remove('swiper-slide-prev');
-		}
-		slides[i].style.display = "none";
-	}
-
-	slideIndex++;
-
-	if (slideIndex > slides.length) {slideIndex = 1}
-  
-	slides[slideIndex-1].style.display = "block";
-  
-	setTimeout(showSlides, 5000); // Change image every 10 seconds
-}
