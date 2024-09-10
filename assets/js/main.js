@@ -318,14 +318,23 @@ function showSlides() {
 	let slides = document.getElementsByClassName("swiper-slide");
   
 	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
+		if(slides[i].classList.contains('swiper-slide-active')) {
+			slides[i].classList.remove('swiper-slide-active');
+		}
+		if(slides[i].classList.contains('swiper-slide-next')) {
+			slides[i].classList.remove('swiper-slide-next');
+		}
+		if(slides[i].classList.contains('swiper-slide-prev')) {
+			slides[i].classList.remove('swiper-slide-prev');
+		}
+		slides[i].style.display = "none";
 	}
 
 	slideIndex++;
 
 	if (slideIndex > slides.length) {slideIndex = 1}
   
-	slides[slideIndex-1].style.display = "block";  
+	slides[slideIndex-1].style.display = "block";
   
-	setTimeout(showSlides, 100000); // Change image every 2 seconds
+	setTimeout(showSlides, 5000); // Change image every 10 seconds
 }
