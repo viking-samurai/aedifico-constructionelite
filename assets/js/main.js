@@ -203,9 +203,9 @@ if( $('.md-content').children('.fix-header').length == 0) {
 //    }
 //});
 
-//$('.navbar-toggle').on('click', function() {
-//    $('.page-wrap').toggleClass('active');
-//});
+$('.navbar-toggle').on('click', function() {
+    $('.page-wrap').toggleClass('active');
+});
 
 $(window).on('resize', function(){
     var ww = $(window).width();
@@ -285,6 +285,8 @@ $('.gallery-wrap').each(function() {
 
 })(jQuery);
 
+
+//Additional or Personal JavaScripts
 //Toggle the sidebar open and closed.
 const sideMenuToggle = document.querySelector('.navbar-toggle');
 const sideMenu = document.querySelector('.raising-menu');
@@ -304,4 +306,3 @@ window.onclick = function(event){
 		sideMenu.classList.remove('active');
 	 }
 };
-

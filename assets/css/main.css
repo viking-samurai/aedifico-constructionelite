@@ -3500,7 +3500,7 @@ mark, .mark {
 
     .raising-nav .raising-menu {
         left: 0;
-        width: 240px;
+        width: 300px;
         background-color: #111;
         -webkit-transform: translate(-100%, 0);
                 transform: translate(-100%, 0);
@@ -3517,7 +3517,7 @@ mark, .mark {
         overflow-x: hidden;
         overflow-y: auto;
         text-align: left;
-        width: 240px;
+        width: 300px;
         transition: all 300ms ease;
     }
 
@@ -3815,6 +3815,12 @@ mark, .mark {
 ol, ul {
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+.list-type-b {
+    list-style: disc;
+    margin: 0 1em;
     padding: 0;
 }
 
