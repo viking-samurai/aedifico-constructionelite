@@ -306,3 +306,10 @@ window.onclick = function(event){
 		sideMenu.classList.remove('active');
 	 }
 };
+
+
+
+
+//Automate the carousel
+let slideIndex = 0;
+
