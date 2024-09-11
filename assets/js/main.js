@@ -120,7 +120,7 @@ $('.swiper').each(function() {
 			pagination: self.find('.swiper-pagination-custom'),
 			nextButton: self.find('.swiper-button-next-custom'),
 			prevButton: self.find('.swiper-button-prev-custom'),
-			spaceBetween: 30
+			spaceBetween: 5
 		},
 		options = $.extend(optDefault, optData);
 	wrapper.children().wrap('<div class="swiper-slide"></div>');
