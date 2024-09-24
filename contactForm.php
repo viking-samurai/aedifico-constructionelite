@@ -38,13 +38,6 @@
     }
 
     //E-mail the message
-    echo '<div class="return-user-div">
-            <p>Message sent!</p>
-            <button class="contact-page-back-button" onclick="javascript:history.back()">
-                Back
-            </button>
-          </div>';
-
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number = $_POST['number'];
@@ -59,5 +52,8 @@
     if($email!=NULL) {
         mail($to, $txt, $headers);
     }
+
+    header("Location: index.html");
+    exit;
             
 ?>
