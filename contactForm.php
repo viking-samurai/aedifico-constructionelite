@@ -52,7 +52,6 @@
     $message = $_POST['message'];
     $to = "rtdegen579@gmail.com";
           
-
     $headers = "From: ".$name. "\r\nEmail: ".$email. "\r\nNumber: ".$number. "\r\nSubject: ".$subject. "\r\nMessage: ".$message. "\r\n";
             
     $txt = "You have received an email from: ".$name;
