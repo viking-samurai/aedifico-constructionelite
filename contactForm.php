@@ -10,9 +10,7 @@
     }
 
     //E-mail the message
-    echo '<div class="return-user-div">
-            <p>Message sent!</p>
-          </div>';
+    echo '<div><p>Message sent!</p></div>';
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -29,7 +27,7 @@
         mail($to, $txt, $headers);
     }
 
-    header("refresh: 4; Location: index.html");
+    header('Refresh: 3; URL=http://aedifico-constructionelite.ca');
     exit;
             
 ?>

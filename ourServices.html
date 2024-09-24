@@ -485,39 +485,66 @@
 								<div class="main-content">
 									<div class="row"> 
 										<div class="col-lg-10 ">
-											<form class="contact-form" onsubmit="contactForm.php()">
+											<form class="contact-form" id="contact-form" 
+												onsubmit="return submitUserForm()" action="contactForm.php" method="post" autocomplete="off">
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="name"/>
+													<input class="form-control" name="name" id="name" type="text" name="input" placeholder="name" required/>
 												</div><!-- End / form-item -->
 												
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="email"/>
+													<input class="form-control" name="email" id="email" type="text" name="input" placeholder="email" required/>
 												</div><!-- End / form-item -->
 												
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="phone"/>
+													<input class="form-control" name="number" id="number" type="text" name="input" placeholder="phone"/>
 												</div><!-- End / form-item -->
 												
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="subject"/>
+													<input class="form-control" name="subject" subject="subject" type="text" name="input" placeholder="subject"/>
 												</div><!-- End / form-item -->
 												
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<textarea name="message" placeholder="Message" style="height: 150px;"></textarea>
+													<textarea name="message" id="message" placeholder="Message" style="height: 150px;"></textarea>
+												</div><!-- End / form-item -->
+												
+												<div class="form-item">
+													<div id="recaptcha-div" class="g-recaptcha" data-sitekey="6Lcb000qAAAAABN3FmgnefAYiKbQbNYuEQTqYet9" data-callback="captchaVerified"></div>
+													<div class="recaptcha-error" id="recaptcha-error">^ This field required.</div>
 												</div><!-- End / form-item -->
 												
 												<button class="btn btn-primary btn-round mb-30" type="submit">Send message</button>
 											</form>
+
+											<script	src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+											<script>
+												function submitUserForm() {
+													var response = grecaptcha.getResponse();
+													if(response.length == 0) {
+														document.querySelector('.recaptcha-error').style.display = "block";
+														setTimeout(() => {
+															document.querySelector('.recaptcha-error').style.display = "none";
+														}, 10000);
+														return false;
+													}
+													return true;
+													document.getElementById('contact-form').reset();
+												}
+				
+												function captchaVerified() {
+													document.getElementById('recaptcha-error').innerHTML = '';
+												}
+											</script>
 										</div>
 									</div>
 								</div>
