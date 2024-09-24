@@ -47,8 +47,6 @@
 
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $number = $_POST['number'];
-    $subject = $_POST['subject'];
     $message = $_POST['message'];
     $to = "rtdegen579@gmail.com";
           
