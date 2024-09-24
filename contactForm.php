@@ -30,7 +30,7 @@
     //reCAPTCHA verification
     if(isset($_POST['contact-form'])) {
         $url = 'https://www.google.com/recaptcha/api/siteverify';
-        $privateKey = "6LeSfVkjAAAAAPvl9acA0eO0ZBpmySTtt7-Ushxv";
+        $privateKey = "6Lcb000qAAAAAGZSg8nyctL7cntu0w4_ZVzqVv0H";
 
         $response = file_get_contents($url."?secret=".$privateKey."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
 
@@ -47,6 +47,8 @@
 
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $number = $_POST['number'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
     $to = "rtdegen579@gmail.com";
           
