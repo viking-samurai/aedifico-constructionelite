@@ -4170,3 +4170,8 @@ ol, ul {
 .bg-color-white {
     background-color: #fff;
 }
+
+.g-recaptcha {
+    transform:scale(0.8);
+    transform-origin:0 0;
+}
