@@ -1,3 +1,22 @@
+<style>
+    p{
+        font-size: 3rem;
+        color: #0e3c68;
+        font-weight: bold;"
+    }
+
+    .return-user-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 200px;
+        width: 600px;
+        margin: auto;
+    }
+</style>
+
 <?php
     //reCAPTCHA verification
     if(isset($_POST['contact-form'])) {
@@ -10,7 +29,9 @@
     }
 
     //E-mail the message
-    echo '<div><p>Message sent!</p></div>';
+    echo '<div class="return-user-div">
+            <p>Message sent!</p>
+          </div>';
 
     $name = $_POST['name'];
     $email = $_POST['email'];
