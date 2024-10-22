@@ -564,6 +564,10 @@ mark, .mark {
     margin-left: 2em;
 }
 
+.about-section-list-item {
+    margin-bottom: 1em;
+}
+
 .about {
     display: block;
     position: relative;
