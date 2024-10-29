@@ -761,6 +761,20 @@ mark, .mark {
     width: 100%;
 }
 
+.video-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.video-button {
+    height: 3em;
+    width: 8em;
+    background-color: #222;
+    color: #fff;
+}
+
 .gallery {
     position: relative;
     display: block;
