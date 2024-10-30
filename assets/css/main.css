@@ -779,7 +779,7 @@ mark, .mark {
     z-index: -100;
 }
 
-@media (max-width: 693px) {
+@media (max-width: 493px) {
     .video-button {
         display: none;
     }
