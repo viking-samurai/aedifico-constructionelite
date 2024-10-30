@@ -775,20 +775,24 @@ mark, .mark {
     color: #fff;
 }
 
-.gallery {
-    position: relative;
-    display: block;
-    margin-bottom: 25px;
-}
-
 .video {
     z-index: -100;
 }
 
 @media (max-width: 693px) {
+    .video-button {
+        display: none;
+    }
+
     .video {
         z-index: 1;
     }
+}
+
+.gallery {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
 }
 
 .gallery:hover .gallery__overlay {
