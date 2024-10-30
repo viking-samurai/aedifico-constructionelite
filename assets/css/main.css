@@ -780,6 +780,10 @@ mark, .mark {
 }
 
 @media (max-width: 493px) {
+    .video-gallery-main {
+        height: 100%;
+    }
+    
     .video-button {
         display: none;
     }
