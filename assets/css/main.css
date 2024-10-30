@@ -785,7 +785,7 @@ mark, .mark {
     z-index: -100;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 693px) {
     .video {
         z-index: 1;
     }
