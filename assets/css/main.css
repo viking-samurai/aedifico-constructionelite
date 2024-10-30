@@ -781,6 +781,16 @@ mark, .mark {
     margin-bottom: 25px;
 }
 
+.video {
+    z-index: -100;
+}
+
+@media (max-width: 400px) {
+    .video {
+        z-index: 1;
+    }
+}
+
 .gallery:hover .gallery__overlay {
     visibility: visible;
     opacity: 1;
