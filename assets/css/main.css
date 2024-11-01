@@ -1630,7 +1630,7 @@ mark, .mark {
 .quote-02 {
     max-width: 300px;
     background-color: #a01617;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     padding: 20px;
     margin: 0;
     box-shadow: 0 0 5px rgba(68, 68, 68, .6);
