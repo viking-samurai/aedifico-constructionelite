@@ -3740,6 +3740,7 @@ mark, .mark {
 
 .hero__title {
     font-size: 40px;
+    -webkit-text-stroke: 1px #000;
     color: #fff;
     margin-top: 0;
     margin-bottom: 20px;
@@ -3759,6 +3760,7 @@ mark, .mark {
 
 .hero__desc {
     font-size: 16px;
+    -webkit-text-stroke: .7px #000;
     color: #fff;
     margin-bottom: 20px;
 }
