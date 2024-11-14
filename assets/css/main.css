@@ -3746,6 +3746,22 @@ mark, .mark {
     margin-bottom: 20px;
 }
 
+.title__outline-Black {
+    -webkit-text-stroke: .7px #000;
+}
+
+.title__outline-Pink {
+    -webkit-text-stroke: .7px #900c5b;
+}
+
+.title__outline-Yellow {
+    -webkit-text-stroke: .7px #a8841e;
+}
+
+.title__outline-Blue {
+    -webkit-text-stroke: .7px #0c4f90;
+}
+
 @media (min-width: 320px) {
     .hero__title {
         font-size: calc(2.27273vw + 32.72727px);
@@ -3760,9 +3776,24 @@ mark, .mark {
 
 .hero__desc {
     font-size: 16px;
-    -webkit-text-stroke: .7px #000;
     color: #fff;
     margin-bottom: 20px;
+}
+
+.text__outline-Black {
+    -webkit-text-stroke: .7px #000;
+}
+
+.text__outline-Pink {
+    -webkit-text-stroke: .7px #a81e42;
+}
+
+.text__outline-Yellow {
+    -webkit-text-stroke: .7px #a8841e;
+}
+
+.text__outline-Blue {
+    -webkit-text-stroke: .7px #87a81e;
 }
 
 @media (min-width: 320px) {
