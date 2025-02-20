@@ -564,6 +564,10 @@ mark, .mark {
     margin-left: 2em;
 }
 
+.about-section-list-item {
+    margin-bottom: 1em;
+}
+
 .about {
     display: block;
     position: relative;
@@ -701,7 +705,6 @@ mark, .mark {
     }
 }
 
-
 /* 7. cta_02
 --------------------------------------------------------------------------------*/
 .cta-01 {
@@ -750,6 +753,44 @@ mark, .mark {
 
 /* 9. gallery
 --------------------------------------------------------------------------------*/
+.video-gallery-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.video-button {
+    height: 3em;
+    width: 8em;
+    background-color: #222;
+    color: #fff;
+}
+
+.video {
+    z-index: -100;
+}
+
+@media (max-width: 493px) {
+    .video-gallery-main {
+        height: 100%;
+    }
+    
+    .video-button {
+        display: none;
+    }
+
+    .video {
+        z-index: 1;
+    }
+}
 
 .gallery {
     position: relative;
@@ -1588,7 +1629,7 @@ mark, .mark {
 .quote-02 {
     max-width: 300px;
     background-color: #a01617;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     padding: 20px;
     margin: 0;
     box-shadow: 0 0 5px rgba(68, 68, 68, .6);
@@ -1672,7 +1713,7 @@ mark, .mark {
 .quote-04 {
     max-width: 300px;
     background-color: #a01617;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     padding: 20px;
     margin: 0;
     box-shadow: 0 0 5px rgba(68, 68, 68, .6);
@@ -3699,9 +3740,26 @@ mark, .mark {
 
 .hero__title {
     font-size: 40px;
+    -webkit-text-stroke: 1px #000;
     color: #fff;
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+.title__outline-Black {
+    -webkit-text-stroke: .7px #000;
+}
+
+.title__outline-Pink {
+    -webkit-text-stroke: .7px #900c5b;
+}
+
+.title__outline-Yellow {
+    -webkit-text-stroke: .7px #a8841e;
+}
+
+.title__outline-Blue {
+    -webkit-text-stroke: .7px #0c4f90;
 }
 
 @media (min-width: 320px) {
@@ -3720,6 +3778,22 @@ mark, .mark {
     font-size: 16px;
     color: #fff;
     margin-bottom: 20px;
+}
+
+.text__outline-Black {
+    -webkit-text-stroke: .7px #000;
+}
+
+.text__outline-Pink {
+    -webkit-text-stroke: .7px #a81e42;
+}
+
+.text__outline-Yellow {
+    -webkit-text-stroke: .7px #a8841e;
+}
+
+.text__outline-Blue {
+    -webkit-text-stroke: .7px #87a81e;
 }
 
 @media (min-width: 320px) {
